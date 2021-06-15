@@ -49,7 +49,6 @@ export default function NavBar({cart}) {
                 <Toolbar className={classes.toolbar}>
                 </Toolbar>
                 <Toolbar className={classes.toolbar1}>
-                <div className={classes.outGrow}/>
                     <Typography component={Link} to='/'>
                         <img 
                             src={logo1}
@@ -57,7 +56,6 @@ export default function NavBar({cart}) {
                             alt='logo'
                         />
                     </Typography>
-                    <div className={classes.grow}/>
                     <div className={classes.search}>
                         <div className={classes.searchIcon}>
                         <SearchIcon />
@@ -71,7 +69,6 @@ export default function NavBar({cart}) {
                         inputProps={{ 'aria-label': 'search' }}
                         />
                     </div>
-                    <div className={classes.outGrow}/>
                 </Toolbar>
                 <Hidden xsDown>
                 <Toolbar className={classes.toolbar2}>
@@ -79,23 +76,18 @@ export default function NavBar({cart}) {
                     <Typography component={Link} to="/" variant="body1" className={classes.typoColor}>
                         Trang chủ
                     </Typography>
-                    <div className={classes.grow}/>
                     <Typography component={Link} to="/howitworks" variant="body1" className={classes.typoColor}>
                         Dịch vụ
                     </Typography>
-                    <div className={classes.grow}/>
                     <Typography component={Link} to="/listproducts" variant="body1" className={classes.typoColor}>
                         Mẫu đá
                     </Typography>
-                    <div className={classes.grow}/>
                     <Typography component={Link} to="/album" variant="body1" className={classes.typoColor}>
                         Album
                     </Typography>
-                    <div className={classes.grow}/>
                     <Typography component={Link} to="/contactus" variant="body1" className={classes.typoColor}>
                         Thông tin
                     </Typography>
-                    <div className={classes.grow}/>
                     <Typography component={Link} to="/cart" variant="body1" className={classes.typoColor}>
                         <div className={classes.divCart}>
                         <ShoppingCartOutlinedIcon fontSize='small'/><p>(</p><p style={{ color: 'red' }}>{cart.length}</p><p>)</p>

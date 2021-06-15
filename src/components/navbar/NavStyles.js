@@ -24,13 +24,12 @@ const useStyles = makeStyles((theme) => ({
     toolbar1: {
         backgroundColor: 'white',
         maxHeight: '40px',
+        justifyContent: 'space-around'
     },
     toolbar2: {
         minHeight: '20px',
         backgroundColor: 'black',
-    },
-    grow: {
-        flexGrow: 1,
+        justifyContent: 'space-between'
     },
     outGrow: {
         width: '12%',
